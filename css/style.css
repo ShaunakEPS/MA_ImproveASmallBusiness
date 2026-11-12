@@ -1,29 +1,70 @@
+:root {
+    --bg-color: #BFFFF1;
+    --primary-color: #7CFFCB;
+    --accent-color: #379634;
+}
 .grid-container { 
     display: grid;
-    gap: 50px;
-    grid-template-columns: auto auto;
+    gap: 25px;
+    grid-template-columns: auto auto auto;
 } /*Note: the navbar colors likely look horrendously ugly. This is intentional (placeholder).*/
+.grid-container-results {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;
+}
+body {
+    background-image: url("../images/ChessBG.png");
+}
+h1 {
+    font-family: adobe-caslon-pro, serif;
+font-weight: 700;
+font-style: normal;
+}
+h2 {
+    font-family: adobe-caslon-pro, serif;
+font-weight: 700;
+font-style: normal;
+}
+h3 {
+    font-family: adobe-caslon-pro, serif;
+font-weight: 700;
+font-style: normal;
+}
 .grid-item {
     text-align: center;
     border: solid;
     border-color: black;
     border-radius: 25px;
-    background-image: url('ChessBG.png');
+    background-color: var(--bg-color);
+    padding: 10px;
+}
+.grid-item-results {
+    text-align: center;
+    border: solid;
+    border-color: black;
+    background-color: var(--primary-color);
+    padding: 10px;
 }
 .title {
     grid-row: 1;
-    grid-column: 1 / span 2;
+    grid-column: 2;
+    margin: auto;
 }
 .navbar {
     grid-row: 2;
-    grid-column: 1 / span 2;
+    grid-column: 2;
+    margin: auto;
+    font-family: adobe-caslon-pro, serif;
+font-weight: 700;
+font-style: italic;
 }
 .nav {
     list-style-type: none; /* removes bullet points */
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: teal;
+    background-color: var(--bg-color);
     overflow: hidden;
 }
 ul.nav li {
@@ -37,15 +78,40 @@ ul.nav li a {
     transition: 0.7s;
 }
 ul.nav a:hover {
-    background-color: green;
-    color: red;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     font-weight: bold;
 }
 .home-recent-results {
-    grid-row: 3;
-    grid-column: 1;
+    grid-row: 4;
+    grid-column: 1 / span 3;
 }
 .home-info-upcoming {
     grid-row: 3;
+    grid-column: 1;
+}
+.calendar {
+    grid-row: 5;
+    grid-column: 1 / span 3;
+    margin: auto;
+    font-family: adobe-caslon-pro, serif;
+font-weight: 400;
+font-style: normal;
+}
+.site_info {
+    grid-row: 3;
+    grid-column: 3;
+}
+table, th, td {
+    border: solid;
+}
+.regions {
+    grid-row: 3;
     grid-column: 2;
+}
+th {
+    background-color: var(--accent-color);
+}
+ul {
+    list-style-type: none;
 }
