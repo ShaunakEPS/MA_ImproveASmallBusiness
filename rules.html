@@ -21,9 +21,152 @@
             </ul>
         </div>
         <div class="grid-item rulesLink">
-            <h2>Official information about regulations regarding the Washington State High School Chess Team Championship Tournament can be found <a href="https://www.whsca.org/pdf/WHSCA-State-Team-Rules-2026-02.pdf">here</a>.</h2>
+            <h2>Official information about regulations regarding the Washington State High School Chess Team Championship Tournament can be found <a href="https://www.whsca.org/pdf/WHSCA-State-Team-Rules-2026-02.pdf" target="_blank">here</a>.</h2>
             <h2>You may also take the quiz below to assess your knowledge on chess rules and regulations covered in the rulebook above.</h2>
         </div>
+        <div class="grid-item quizSpot">
+            <p>Welcome to this quiz. It has five questions about general chess rules and five about the rules discussed in the rulebook.</p>
+            <div class="quizGrid">
+                <div class="grid-item-quiz" id="question1Grid">
+                    <p>Question 1: What happens if a player touches a piece?</p>
+                    <form action="">
+                        <input type="radio" name="question1" id="question1.1">
+                        <label for="question1.1">They must move it (if possible) if it is theirs or take it (if possible) if it is their opponent's.</label><br>
+                        <input type="radio" name="question1" id="question1.2">
+                        <label for="question1.2">Nothing happens</label><br>
+                        <input type="radio" name="question1" id="question1.3">
+                        <label for="question1.3">Their clock will start ticking, because the clock doesn't tick in the time between moves.</label><br>
+                    </form> <!--If radio buttons are in the same form, then you can only pick one of them. You can pick many by putting them in different forms.-->
+                    <h3 id="question1-answer"></h3>
+                    <input id="submitQ1" type="button" value="SUBMIT" onclick="question1();">
+                </div>
+                <div class="grid-item-quiz" id="question2Grid">
+                    <p>Question 2: According to the Washington State High School Chess Team Championship Tournament official rulebook, what happens if one or more players is missing from a planned team of five?</p>
+                    <form action="">
+                        <input type="radio" name="question2" id="question2.1">
+                        <label for="question2.1">The team is forfeit. No exceptions whatsoever.</label><br>
+                        <input type="radio" name="question2" id="question2.2">
+                        <label for="question2.2">The team will play with however many players it has. It may also be broken up and added to other teams to make it fairer.</label><br>
+                        <input type="radio" name="question2" id="question2.3">
+                        <label for="question2.3">The team will forfeit unless an unforseen emergency happens or an alternate is subbed in before the tournament.</label><br>
+                    </form>
+                    <h3 id="question2-answer"></h3>
+                    <input id="submitQ2" type="button" value="SUBMIT" onclick="question2();">
+                </div>
+                <div class="grid-item-quiz" id="question3Grid">
+                    <p>Question 3: How do you notate queenside castling?</p>
+                    <form action="">
+                        <input type="radio" name="question3" id="question3.1">
+                        <label for="question3.1">K.castleQ</label><br>
+                        <input type="radio" name="question3" id="question3.2">
+                        <label for="question3.2">0-0-0</label><br>
+                        <input type="radio" name="question3" id="question3.3">
+                        <label for="question3.3">0-0-K-R</label><br>
+                    </form>
+                    <h3 id="question3-answer"></h3>
+                    <input id="submitQ3" type="button" value="SUBMIT" onclick="question3();">
+                </div>
+                <div class="grid-item-quiz" id="question4Grid">
+                    <p>Question 4: What is the time control for the State Team Championship?</p>
+                    <form action="">
+                        <input type="radio" name="question4" id="question4.1">
+                        <label for="question4.1">30 + 5</label><br>
+                        <input type="radio" name="question4" id="question4.2">
+                        <label for="question4.2">Game/60 + 5</label><br>
+                        <input type="radio" name="question4" id="question4.3">
+                        <label for="question4.3">There is no time control</label><br>
+                    </form>
+                    <h3 id="question4-answer"></h3>
+                    <input id="submitQ4" type="button" value="SUBMIT" onclick="question4();">
+                </div>
+                <div class="grid-item-quiz" id="question5Grid">
+                    <p>Question 5: Can en passant be played here?</p>
+                    <img src="images/EnPassant.png" width="200" height="200">
+                    <form action="">
+                        <input type="radio" name="question5" id="question5.1">
+                        <label for="question5.1">Yes</label><br>
+                        <input type="radio" name="question5" id="question5.2">
+                        <label for="question5.2">No, because en passant applies when the pawns are facing each other.</label><br>
+                        <input type="radio" name="question5" id="question5.3">
+                        <label for="question5.3">Yes, but only if black just moved their pawn 2 squares forward.</label><br>
+                    </form>
+                    <h3 id="question5-answer"></h3>
+                    <input id="submitQ5" type="button" value="SUBMIT" onclick="question5();">
+                </div>
+                <div class="grid-item-quiz" id="question6Grid">
+                    <p>Question 6: Can a player use the bathroom at any point in a chess game without forfeiting?</p>
+                    <form action="">
+                        <input type="radio" name="question6" id="question6.1">
+                        <label for="question6.1">No, because leaving is unacceptable at any point.</label><br>
+                        <input type="radio" name="question6" id="question6.2">
+                        <label for="question6.2">Yes, but not if it is their move. They must make a move before leaving.</label><br>
+                        <input type="radio" name="question6" id="question6.3">
+                        <label for="question6.3">Yes, and their clock will be stopped to make it more fair.</label><br>
+                    </form>
+                    <h3 id="question6-answer"></h3>
+                    <input id="submitQ6" type="button" value="SUBMIT" onclick="question6();">
+                </div>
+                <div class="grid-item-quiz" id="question7Grid">
+                    <p>Question 7: After this move (Re8), who is winning?</p>
+                    <img src="images/Puzzle1.png" width="200" height="200">
+                    <form action="">
+                        <input type="radio" name="question7" id="question7.1">
+                        <label for="question7.1">White</label><br>
+                        <input type="radio" name="question7" id="question7.2">
+                        <label for="question7.2">Black</label><br>
+                        <input type="radio" name="question7" id="question7.3">
+                        <label for="question7.3">The position is equal</label><br>
+                    </form>
+                    <h3 id="question7-answer"></h3>
+                    <input id="submitQ7" type="button" value="SUBMIT" onclick="question7();">
+                </div>
+                <div class="grid-item-quiz" id="question8Grid">
+                    <p>Question 8: According to the rulebook, how is a result of a game reported?</p>
+                    <form action="">
+                        <input type="radio" name="question8" id="question8.1">
+                        <label for="question8.1">The players leave the pieces where they are so the judges can evaluate the final position and determine the result.</label><br>
+                        <input type="radio" name="question8" id="question8.2">
+                        <label for="question8.2">The players flag a judge down and tell them the result.</label><br>
+                        <input type="radio" name="question8" id="question8.3">
+                        <label for="question8.3">The players fill the results out on the recording sheet.</label><br>
+                    </form>
+                    <h3 id="question8-answer"></h3>
+                    <input id="submitQ8" type="button" value="SUBMIT" onclick="question8();">
+                </div>
+                <div class="grid-item-quiz" id="question9Grid">
+                    <p>Question 9: Is this move (exf4) good or bad?</p>
+                    <img src="images/ViennaGambit.png" width="200" height="200">
+                    <form action="">
+                        <input type="radio" name="question9" id="question9.1">
+                        <label for="question9.1">Bad, because white will take control of the center while winning the pawn back.</label><br>
+                        <input type="radio" name="question9" id="question9.2">
+                        <label for="question9.2">Good, because white foolishly blundered a pawn and black should take advantage of that.</label><br>
+                        <input type="radio" name="question9" id="question9.3">
+                        <label for="question9.3">exf4 isn't detrimental, but 3...Ng4 is better here to attack white's h-pawn.</label><br>
+                    </form>
+                    <h3 id="question9-answer"></h3>
+                    <input id="submitQ9" type="button" value="SUBMIT" onclick="question9();">
+                </div>
+                <div class="grid-item-quiz" id="question10Grid">
+                    <p>Question 10: What other rulebook is this one based off of?</p>
+                    <form action="">
+                        <input type="radio" name="question10" id="question10.1">
+                        <label for="question10.1">USCF (United States Chess Federation)</label><br>
+                        <input type="radio" name="question10" id="question10.2">
+                        <label for="question10.2">WCF (Washington Chess Federation)</label><br>
+                        <input type="radio" name="question10" id="question10.3">
+                        <label for="question10.3">CCA (Chess Company of America)</label><br>
+                    </form>
+                    <h3 id="question10-answer"></h3>
+                    <input id="submitQ10" type="button" value="SUBMIT" onclick="question10();">
+                </div>
+                <div class="grid-item-quiz" style="background-color: var(--bg-color); border: none;">
+                    <input type="button" value="GET RESULTS" onclick="GetResults();">
+                    <p id="results"></p>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

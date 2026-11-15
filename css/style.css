@@ -13,6 +13,11 @@
     grid-template-columns: auto auto auto auto auto auto;
     padding: 10px;
 }
+.quizGrid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: auto;
+}
 .active {
     background-color: var(--accent-color);
 }
@@ -47,6 +52,14 @@ font-style: normal;
     border-color: black;
     border-radius: 25px;
     background-color: var(--bg-color);
+    padding: 10px;
+}
+.grid-item-quiz {
+    text-align: left;
+    border: solid;
+    border-color: black;
+    border-radius: 25px;
+    background-color: var(--accent-color);
     padding: 10px;
 }
 .grid-item-contact {
@@ -203,5 +216,9 @@ font-style: normal;
 }
 .rulesLink {
     grid-row: 3;
+    grid-column: 2;
+}
+.quizSpot {
+    grid-row: 4;
     grid-column: 2;
 }
