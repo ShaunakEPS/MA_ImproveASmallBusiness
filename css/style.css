@@ -23,7 +23,7 @@
 }
 .grid-container-eligibility {
     display: grid;
-    gap: 25px;
+    gap: 50px;
     grid-template-columns: auto auto auto;
 }
 body {
@@ -221,4 +221,10 @@ font-style: normal;
 .quizSpot {
     grid-row: 4;
     grid-column: 2;
+}
+.Links1 {
+    grid-row: 3;
+}
+.Links2 {
+    grid-row: 4;
 }
