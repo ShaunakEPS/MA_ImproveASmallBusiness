@@ -3,6 +3,11 @@
     --primary-color: #7CFFCB;
     --accent-color: #379634;
 }
+p {
+    font-family: avenir-next-world, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
 .grid-container { 
     display: grid;
     gap: 50px;
@@ -32,17 +37,22 @@ body {
     background-size: cover;
 }
 h1 {
-    font-family: adobe-caslon-pro, serif;
+    font-family: gear-wide, sans-serif;
 font-weight: 700;
 font-style: normal;
 }
+a {
+    font-family: avenir-next-world, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
 h2 {
-    font-family: adobe-caslon-pro, serif;
+    font-family: gear-wide, sans-serif;
 font-weight: 700;
 font-style: normal;
 }
 h3 {
-    font-family: adobe-caslon-pro, serif;
+    font-family: avenir-next-world, sans-serif;
 font-weight: 700;
 font-style: normal;
 }
@@ -88,18 +98,18 @@ font-style: normal;
     grid-row: 2;
     grid-column: 2;
     margin: auto;
-    font-family: adobe-caslon-pro, serif;
-font-weight: 700;
-font-style: italic;
+    font-family: avenir-next-world, sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 .navbar-eligibility {
     grid-row: 2;
     grid-column: 2;
     margin: auto;
     text-align: center;
-    font-family: adobe-caslon-pro, serif;
-font-weight: 700;
-font-style: italic;
+    font-family: avenir-next-world, sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 .nav {
     list-style-type: none; /* removes bullet points */
@@ -125,15 +135,15 @@ ul.nav a:hover {
     font-weight: bold;
 }
 .home-recent-results {
-    grid-row: 4;
+    grid-row: 5;
     grid-column: 1 / span 3;
 }
 .home-info-upcoming {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 1;
 }
 .calendar {
-    grid-row: 5;
+    grid-row: 6;
     grid-column: 1 / span 3;
     margin: auto;
     font-family: adobe-caslon-pro, serif;
@@ -142,14 +152,17 @@ font-style: normal;
 }
 .site_info {
     grid-row: 3;
-    grid-column: 3;
+    grid-column: 1 / span 3;
 }
 table, th, td {
     border: solid;
+    font-family: avenir-next-world, sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 .regions {
-    grid-row: 3;
-    grid-column: 2;
+    grid-row: 4;
+    grid-column: 2 / span 2;
 }
 th {
     background-color: var(--accent-color);
